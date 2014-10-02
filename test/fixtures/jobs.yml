@@ -5,11 +5,13 @@ one:
   job_title: MyString
   description: MyText
   city: MyString
-  dates_worked: 2014-10-01 20:46:00
+  start_date: 2014-10-01
+  end_date: 2014-10-01
 
 two:
   company: MyString
   job_title: MyString
   description: MyText
   city: MyString
-  dates_worked: 2014-10-01 20:46:00
+  start_date: 2014-10-01
+  end_date: 2014-10-01

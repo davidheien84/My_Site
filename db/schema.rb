@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141002004600) do
+ActiveRecord::Schema.define(version: 20141002011106) do
 
   create_table "jobs", force: true do |t|
     t.string   "company"
     t.string   "job_title"
     t.text     "description"
     t.string   "city"
-    t.datetime "dates_worked"
+    t.date     "start_date"
+    t.date     "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
