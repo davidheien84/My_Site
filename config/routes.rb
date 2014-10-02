@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/index'
+
+  get 'static_pages/my_story'
+
+  get 'static_pages/contact'
+
   resources :jobs
 
   resources :portfolios
