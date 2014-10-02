@@ -3,13 +3,13 @@
 one:
   company: MyString
   job_title: MyString
-  description: MyString
+  description: MyText
   city: MyString
-  dates_worked: 2014-10-01 20:24:36
+  dates_worked: 2014-10-01 20:46:00
 
 two:
   company: MyString
   job_title: MyString
-  description: MyString
+  description: MyText
   city: MyString
-  dates_worked: 2014-10-01 20:24:36
+  dates_worked: 2014-10-01 20:46:00
