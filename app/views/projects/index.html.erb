@@ -11,17 +11,13 @@
 
   <tbody>
     <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
-        <td><%= project.image %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+      <tr><td class = "no_border"><%= project.name %></td></tr>
+      <tr><td class="no_border"><%= image_tag(project.image_url, :width => 300) %></td></tr>
+       
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Project', new_project_path %>
+

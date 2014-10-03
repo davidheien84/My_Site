@@ -20,7 +20,7 @@ body{
 	background-size:cover;*/
 }
 
-img {
+img.my_photo {
 	margin-top: 17%;
 }
 
@@ -105,4 +105,10 @@ a{
 td{
 	border: solid;
 	padding: 10px;
+	text-align: center;
+}
+
+td.no_border{
+	border: none;
+	padding: none;
 }
