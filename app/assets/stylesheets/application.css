@@ -76,11 +76,33 @@ p.center{
 	text-align: center;
 }
 
-td {
-	padding-left: 20px
+td.left {
+	font-size: 20px;
+	text-align: left;
+	border: none;	
+}
+
+td.right{
+	text-align: center;
+	font-size: 20px;
+	border: none;
 }
 
 table{
 	margin-right: auto;
 	margin-left: auto;
+}
+
+h2{
+	text-align: center;
+}
+
+a{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+td{
+	border: solid;
+	padding: 10px;
 }
