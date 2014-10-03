@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :jobs
+  
+  root to: 'static_pages#index'
 
   get 'static_pages/index'
 
@@ -7,7 +8,16 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact'
 
+  get 'contacts' => 'static_pages#contact'
+
+  get 'home' => 'static_pages#index'
+
+  get 'my_story' => 'static_pages#my_story'
+
+ 
   resources :portfolios
+
+  resources :jobs
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

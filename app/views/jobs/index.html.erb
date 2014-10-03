@@ -1,34 +1,22 @@
-<h1>Listing jobs</h1>
+<h1><strong>Work Experience</strong></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Company</th>
-      <th>Job title</th>
-      <th>Description</th>
-      <th>City</th>
-      <th>Start date</th>
-      <th>End date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  
     <% @jobs.each do |job| %>
-      <tr>
-        <td><%= job.company %></td>
-        <td><%= job.job_title %></td>
-        <td><%= job.description %></td>
-        <td><%= job.city %></td>
-        <td><%= job.start_date %></td>
-        <td><%= job.end_date %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    
+    <div class = "item-background">
+      <div class ="item-info">
+        <h3><%= job.company %></h3>
+        <h4><%= job.job_title %><br>
+        <%= job.city %><br>
+        <%= job.start_date %>
+        <%= job.end_date %></h4><br>
+        <%= job.description %>
+      </div>
+    </div>
+     
     <% end %>
-  </tbody>
-</table>
+    
+  
 
 <br>
 
