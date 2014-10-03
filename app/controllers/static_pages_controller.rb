@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   def index
   	@jobs = Job.all
-  	@portfolios = Portfolio.all
+  	@projects = Project.all
   end
 
   def my_story

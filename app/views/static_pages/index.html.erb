@@ -39,30 +39,33 @@
 <br>
 <br>
 
-<h2>Listing portfolios</h2>
+<h2>Listing projects</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Project name</th>
+      <th>Name</th>
+      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @portfolios.each do |portfolio| %>
+    <% @projects.each do |project| %>
       <tr>
-        <td><%= portfolio.project_name %></td>
-        <td><%= link_to 'Show', portfolio %></td>
-        <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
-        <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= project.name %></td>
+        <td><%= project.image %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-
+  </tbody>
+</table>
 
 <br>
 
-<%= link_to 'New Portfolio', new_portfolio_path %>
+<%= link_to 'New Project', new_project_path %>
  </tbody>
 </table>
 

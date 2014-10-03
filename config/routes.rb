@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+
   root to: 'static_pages#index'
 
   get 'static_pages/index'
@@ -15,7 +16,7 @@ Rails.application.routes.draw do
   get 'my_story' => 'static_pages#my_story'
 
  
-  resources :portfolios
+  resources :projects
 
   resources :jobs
 
