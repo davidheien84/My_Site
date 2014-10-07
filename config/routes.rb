@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'contacts' => 'static_pages#contact'
 
-  get 'home' => 'static_pages#index'
+  get 'admin' => 'static_pages#index'
 
   get 'my_story' => 'static_pages#my_story'
 
